@@ -10,8 +10,6 @@ gem "figaro", ">= 0.5.3"
 
 gem 'sqlite3'
 gem "squeel"
-gem "pg"
-gem "activerecord-postgresql-adapter"
 
 gem 'sprockets', '~> 2.0'
 gem 'jquery-rails'
