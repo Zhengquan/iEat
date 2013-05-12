@@ -10,8 +10,6 @@ gem "figaro", ">= 0.5.3"
 
 gem 'sqlite3'
 gem "squeel"
-gem "pg"
-gem "activerecord-postgresql-adapter"
 
 gem 'sprockets', '~> 2.0'
 gem 'jquery-rails'
@@ -23,6 +21,7 @@ gem 'oj'
 gem 'rack', '1.4.1'
 # Deploy with Capistrano
 gem 'capistrano', '~> 2.13.5'
+gem 'capistrano-progressbar', :github => 'Zhengquan/capistrano-progressbar'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

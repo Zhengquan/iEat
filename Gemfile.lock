@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/Zhengquan/capistrano-progressbar.git
+  revision: add17a649b791c6ea1a37dad6c558dcf90b70689
+  specs:
+    capistrano-progressbar (0.0.1)
+      capistrano (>= 2.9.0)
+      progressbar (>= 0.11.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -26,8 +34,6 @@ GEM
       activesupport (= 3.2.9)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
-    activerecord-postgresql-adapter (0.0.1)
-      pg
     activeresource (3.2.9)
       activemodel (= 3.2.9)
       activesupport (= 3.2.9)
@@ -143,10 +149,10 @@ GEM
     oj (2.0.10)
     open4 (1.3.0)
     orm_adapter (0.4.0)
-    pg (0.15.1)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
+    progressbar (0.20.0)
     pry (0.9.12.1)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -269,12 +275,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-postgresql-adapter
   awesome_print
   better_errors (>= 0.3.2)
   binding_of_caller (>= 0.6.8)
   cancan (>= 1.6.8)
   capistrano (~> 2.13.5)
+  capistrano-progressbar!
   capybara (>= 2.0.2)
   coffee-rails (~> 3.2.1)
   daemon-spawn
@@ -289,7 +295,6 @@ DEPENDENCIES
   less-rails (>= 2.2.6)
   libv8 (>= 3.11.8)
   oj
-  pg
   pry
   pry-debugger
   pry-doc
