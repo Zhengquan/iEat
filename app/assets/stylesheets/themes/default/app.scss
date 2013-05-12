@@ -1,0 +1,145 @@
+#main,.container,.content,.row,.ui-mobile-viewport{height: 100%;}
+.loading{ width: 46px; height: 46px; background:url(images/ajax-loader.gif) no-repeat; position: fixed; top: 40px; left: 50%; margin-left: -23px;}
+#login-page,#sign-up,#my-bills,#group-list,#group-show,#create-group,#user-order-dishes,#restaurants-list{display: none;}
+
+.ui-btn-inner{font-size: 16px;}
+.ui-msg{width: 100%; z-index: 100000; padding: 10px;position: fixed; top: -500px; font-size: 14px;box-sizing: border-box; text-align: center;}
+.ui-msg.success{ background: #8ed0a2;}
+.ui-msg.error{ background: #f8394b; color: #fff;}
+
+#login-page{
+  .install-ul{ margin-top: 40px;}
+}
+
+#group-list{
+  h2{margin: 15px 0 0 0;}
+  .group-item{font-size:14px;  display:block;}
+  .joined{padding-left: 35px;background: url(images/joined.png) no-repeat 4px center;}
+  .created{padding-left: 35px;background: url(images/created.png) no-repeat 4px center;}
+  .group-name{display: inline-block; width:120px;}
+  .restaurant-name{display: inline-block; width:80px;}
+  }
+#group-show{
+  h2.ui-li-heading{margin:0px;padding: 7px 0 4px; overflow: auto;}
+  .ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner{font-size: 14px;}
+  .info-details{
+    .subject{font-weight: normal; display: inline-block; width: 80px; }
+    table{width: 100%;
+      tr{ border-bottom: 1px #ccc dashed;}
+      tr:last-child{ border-bottom: 0px;}
+      td.dish-name{ padding:5px 0; font-weight: normal; }
+      td.dish-price{text-align: right; width: 50px;}
+      td.dish-count{width: 50px;}
+    }
+    .order-status li{padding:5px 15px;
+      .dish-count{
+        position: relative;
+        .ui-li-count{
+          margin-top: 0px;
+          top: -10px;
+          right: 5px;
+        }
+      }
+    }
+
+    .order-status li.no-orders{padding:12px 15px;}
+    .restaurant-details,.my-orders-details,.all-status,.members-details{display: none;}
+    .my-orders-details{
+      h2.ui-li-heading{padding: 0px;}
+      .user-name{float:left; margin-top: 10px;}
+      .ui-btn-inline{float: right}
+    }
+  }
+}
+#user-order-dishes{
+  h2{margin-left:4px; font-size:14px;}
+  .dishes-content{ display: block;}
+
+  .edit-restaurant-details{margin-top: 20px;}
+  .edit-restaurant-details li{padding: 20px 15px 0px;}
+  .edit-restaurant-details li#no-results{padding: 12px 15px 12px;}
+  .edit-restaurant-details li.ui-li-divider{padding: 8px 15px 8px 8px; font-size:bold;}
+  .edit-restaurant-details .ui-li-count{ position:static; float:left; margin:14px 0 0 0; }
+  .edit-restaurant-details .ui-btn-inner{min-width: 0px; padding-left: 18px; display: inline-block; height: 8px;}
+
+  .order-actions{
+    .reduce{float:right;}
+    .add{float:right; margin-right: 0px;}
+    .ui-input-text{ float:right; margin-top: 11px; margin-right: 0px; height: 25px; width:20px; display: inline-block;}
+    .ui-input-text .number-input{ margin:-5px 0px 0px 0; width:20px; }
+  }
+
+  .footer-navbar{overflow: hidden;}
+  .footer-navbar li{padding-top: 0; padding-bottom: 0;}
+  .footer-navbar .ui-btn-inner{padding-top:20px;}
+  .footer-navbar .ui-icon{top:4px;}
+  .footer-navbar .ui-btn-text{top:6px;}
+
+  .group-button-content{clear:both;float:right; width:auto; }
+  .dish-name,.dishes-total{display:inline-block;float:left;}
+  .dish-price{float:right;}
+  .confirm-foods{margin-top:30px;}
+  .listview li{ padding-right: 15px !important; font-size: 12px;}
+
+  .my-orders-content,.my-group-content{display: none;}
+  .ui-listview-filter-inset{margin-top: 0px;}
+
+}
+
+#recharge-details{
+  .ui-controlgroup-controls{display: block; width:auto;}
+  .ui-controlgroup-controls .ui-btn{ width:50%; box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box;    }
+  .ui-controlgroup-controls .input-label.ui-btn{width:100%;}
+}
+
+#user-restaurant-details li,#user-order-dishes li,#confirm-success li{padding-top:0.7em;padding-bottom:0.7em; font-size: 14px;}
+.dwi {display: block;}
+#scroller{margin-top:20px;}
+
+#restaurants-list{
+  .ui-listview-filter-inset{margin: 0 -5px -8px;}
+}
+
+#create-group{
+  h2{margin:10px 0;}
+  legend{font-size: 12px;}
+  .create-group-btn{margin-top:20px;}
+  .create-group-btn.ui-btn-right{margin-top:0px;}
+  .details{position:relative; display: block;}
+  .details .more{position:absolute; right: 0px; top: 0px; border: 1px #000 soild;}
+}
+#my-bills{
+  table{width: 100%;
+    tr{ border-bottom: 1px #ccc dashed;}
+    tr:last-child{ border-bottom: 0px;}
+    td.dish-name{ padding:5px 0; font-weight: normal; }
+    td.dish-price{text-align: right; width: 50px;}
+    td.dish-count{width: 50px;}
+  }
+  .get-money-back-content,.pay-back-content{display: none;}
+  .get-money-back-content li,.pay-back-content li{padding:5px 15px;
+    .ui-btn{float:right;}
+    .dish-count{
+      position: relative;
+      .ui-li-count{
+        margin-top: 0px;
+        top: -10px;
+        right: 5px;
+      }
+    }
+  }
+  .get-money-back-content{
+    .ui-li-heading{margin: 0;}
+    .bills-title{float:left; margin-top: 10px;}
+  }
+  .pay-back-content{
+    .ui-li-heading{margin: 5px 0;}
+    .bills-title{float:left; margin-top: 5px;}
+  }
+
+  .no-item{padding: 10px 0; display: inline-block}
+}
+
+#bill-details{
+  .ui-controlgroup-controls{width:auto; display: block;}
+}

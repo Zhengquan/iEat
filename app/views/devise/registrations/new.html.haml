@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title My Page
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no", :name => "viewport"}
+    = stylesheet_link_tag "themes/default/all", :media => "all"
+  %body
+    .loading
+    #sign-up{"data-role" => "page"}
+      %div{"data-role" => "header"}
+        %h1 注册
+      %div{"data-role" => "content"}
+        %form.register-form
+          %h2 用户名
+          %input{"type"=>"text",:required => true, :id =>'input-username'}
+          %h2 邮箱
+          %input{"type"=>"email",:required => true, :id =>'input-email'}
+          %h2 电话
+          %input{"type"=>"number", :id =>'input-telephone'}
+          %h2 密码
+          %input{"type"=>"password",:required => true, :id =>'input-password'}
+          %h2 重复密码
+          %input{"type"=>"password",:required => true, :id =>'input-password-confirmation'}
+          %input{"type"=>"submit", :value => "注册"}
+
+  = javascript_include_tag "compress/sign-up-all"

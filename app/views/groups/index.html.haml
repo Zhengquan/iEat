@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title My Page
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no", :name => "viewport"}
+    = stylesheet_link_tag "themes/default/all", :media => "all"
+  %body
+    .loading
+    #group-list{"data-role" => "page"}
+      %div{"data-role" => "header"}
+        %a.ui-btn-left.log-out{"data-theme" => "c", :href => "javascript:void(0);"} 登出
+        %h1 饭团列表
+        %a.ui-btn-right.my-bills{"data-icon" => "arrow-r","data-theme" => "c", :href => "javascript:void(0);"} 我的账单
+      %div{"data-role" => "content"}
+        %a.create-group{"data-role" => "button", :href => "javascript:void(0);"}创建饭团
+        %h2 与我相关的饭团
+        %ul.my-orders-ul{"data-inset" => "true", "data-role" => "listview"}
+        %h2 可参加的饭团们
+        %ul.group-list-ul{"data-inset" => "true", "data-role" => "listview"}
+  = javascript_include_tag "compress/group-list-all"
+
+

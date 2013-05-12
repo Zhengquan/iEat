@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title My Page
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no", :name => "viewport"}
+    = stylesheet_link_tag "themes/default/all", :media => "all"
+  %body
+    .loading
+    #login-page{"data-role" => "page"}
+      %div{"data-role" => "header"}
+        %h1 登陆
+      %div{"data-role" => "content"}
+        %form.login-form
+          %h2 用户名/邮箱
+          %input#input-data{"type"=>"text"}
+          %h2 密码
+          %input#input-password{"type"=>"password"}
+          %input#login-btn{"type" => "submit", "data-role"=>"button", "data-inline"=>"true", "value" => "登陆"}
+          %input#sign-up{"type" => "button", "data-role"=>"button", "data-inline"=>"true", "value" => "注册"}
+
+        %ul.ui-icon-alt.install-ul{"data-inset" => "true", "data-role" => "listview"}
+          %li.ios-section
+            %a{:href => "itms-services://?action=download-manifest&url=http://ieat.thoughtworks.biz/release/ios/iEat.plist"} Install iOS version
+          %li.android-section
+            %a{:href => "http://ieat.thoughtworks.biz/release/android/iEat-1.0.apk"} Install Android version
+
+  = javascript_include_tag "compress/login-all"

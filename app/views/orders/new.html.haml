@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title My Page
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no", :name => "viewport"}
+    = stylesheet_link_tag "themes/default/all", :media => "all"
+  %body
+    .loading
+    #user-order-dishes{"data-role" => "page"}
+      %div{"data-role" => "header"}
+        %a.ui-btn-left{"data-icon" => "arrow-l", "data-theme" => "c", :href => "#group-list"} 返回
+        %h1= @group.restaurant.name
+      %div.details-content{"data-role" => "content"}
+        %div{"data-collapsed-icon" => "arrow-d", "data-content-theme" => "b", "data-expanded-icon" => "arrow-u", "data-role" => "collapsible", "data-theme" => "b"}
+        .edit-my-orders-content
+        %a.confirm-foods{"data-role" => "button", :href => "javascript:void(0);"} 确认
+  = javascript_include_tag "compress/order-create-all"
