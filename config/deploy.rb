@@ -2,7 +2,7 @@
 require 'bundler/capistrano'
 # capistrano-progressbar
 # set task count
-set :task_count, 20
+set :task_count, 14
 require 'capistrano-progressbar'
 
 set :application, "iEat"
