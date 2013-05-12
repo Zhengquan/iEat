@@ -23,6 +23,7 @@ gem 'oj'
 gem 'rack', '1.4.1'
 # Deploy with Capistrano
 gem 'capistrano', '~> 2.13.5'
+gem 'capistrano-progressbar', :github => 'Zhengquan/capistrano-progressbar'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
